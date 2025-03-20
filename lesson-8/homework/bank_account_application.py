@@ -7,7 +7,7 @@ class Account:
         self.account_number = self.generate_account_number()
         self.name = name
         self.balance = initial_deposit
-
+    
     def generate_account_number(self):
         return random.randint(10000, 99999)
 
@@ -82,3 +82,4 @@ if __name__ == "__main__":
     bank.view_account(acc2)
 
     bank.save_to_file()
+
